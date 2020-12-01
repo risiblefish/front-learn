@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<h1>注册</h1>
+
+
+<!--
+    form标签的常用关键字， action表示数据提交到哪里，method表示提交的方式
+-->
+<form action="1-第一个网页.html" method="get">
+    <!-- 文本输入框 ： input type = "text"
+        readonly - 只读
+        hidden - 隐藏域
+    -->
+    <p>名字： <input type="text" name="username" value="admin" readonly></p>
+    <p>密码： <input type="password" name="pwd" value="123" hidden></p>
+    <!-- 单选标签radio
+    如果要做到单选效果，必须让标签分在同一个组，即name属性要一样
+     -->
+    <p>性别：
+        <input type="radio" value="male" name="gender">男
+        <input type="radio" value="female" name="gender">女
+    </p>
+
+    <!-- 多选标签checkbox   -->
+    <p>
+        爱好：
+        <input type="checkbox" value="sleep"  name="hobby">睡觉
+        <input type="checkbox" value="chat"  name="hobby">聊天
+        <input type="checkbox" value="coding"  name="hobby">游戏
+    </p>
+
+    <!-- 按钮标签button
+        disabled - 禁用
+     -->
+    <p>
+        按钮：
+        <input type="button" name="btn" value="点击变长" disabled>
+<!--        按钮2：-->
+<!--        <input type="image" src="../resources/image/osb.png">-->
+    </p>
+
+    <!-- 下拉框/列表框 select   -->
+    <p>
+        下拉框：
+        <select name="列表名称">
+            <option value="china">中国</option>
+            <option value="usa">美国</option>
+            <option value="india">印度</option>
+        </select>
+    </p>
+
+    <!-- 文本域，即多行文本 textarea  -->
+    <p>
+        文本域：
+        <textarea name="textarea" cols="50" rows="10">文本内容</textarea>
+    </p>
+
+    <!-- 文件域 -->
+    <p>
+        文件域：
+        <input type="file" name="fileName">
+        <input type="button" value="上传" name="upload">
+    </p>
+
+    <!-- 邮件验证 -->
+    <p>
+        邮箱：
+        <input type="email" name="email">
+    </p>
+
+    <!-- URL验证 -->
+    <p>
+        URL：
+        <input type="url" name="url">
+    </p>
+
+
+    <!-- 滑块 -->
+    <p>
+        滑块：
+        <input type="range" name="range" min="5" max="10">
+    </p>
+
+    <!-- 搜索 -->
+    <p>
+        搜索：
+        <input type="search" name="search">
+    </p>
+
+
+    <!-- 表单功能性标签   -->
+    <!-- placeholder 提示性内容 -->
+    <p>
+        placeholder:
+        <input type="input" name="in" placeholder="提示性内容">
+    </p>
+
+    <!-- required 非空判断 -->
+    <p>
+        required验证非空：
+        <input type="input" name="in" required>
+    </p>
+
+    <!-- pattern 正则表达式 -->
+    <p>
+        pattern正则校验：
+        <input type="input" name="diy-mail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+    </p>
+
+
+    <!-- 使用lable来增强鼠标可用性 -->
+    <p>
+        <label for="mark">你点我试试</label>
+        <input type="search" name="search" id="mark">
+    </p>
+
+
+
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+</form>
+</body>
+</html>
