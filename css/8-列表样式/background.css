@@ -1,0 +1,47 @@
+/*一般习惯是根据标签从上到下的顺序来编写css*/
+
+#nav{
+    width: 300px;
+    /* 颜色 图片 图片位置 图片平铺方式 */
+    background: red url("../../resources/image/d.png") no-repeat 258px 10px;
+}
+
+/**
+ 设置字体大小
+ 设置字体粗细
+ 设置文本缩进
+ 设置行间距
+ */
+.title{
+    font-size:18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 30px;
+}
+
+ul{
+    background: gray;
+}
+
+/*ul li
+设置高度
+*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("../../resources/image/r.png");
+    background-repeat: no-repeat;
+    background-position: 222px 2px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

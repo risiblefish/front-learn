@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4种层次选择器</title>
+    <style>
+        /*
+        1.后代选择器 ： body标签的所有p后代
+        语法：标签 空格 标签
+        */
+        body p{
+            background: #59cf2d;
+        }
+
+
+        /*
+        2.子选择器 ：body标签的子一代
+        语法：标签 > 标签
+        */
+        body > p{
+            background: red;
+        }
+
+        /*
+        3. 兄弟/相邻选择器，注意它只会选择个标签，即当前标签同级的，且在它之下的那个标签
+        语法：标签 + 标签
+        */
+        .p2 + p{
+            background: aqua;
+        }
+
+        /*
+        4.通用兄弟选择器 它与兄弟选择器的区别是，它会选择所有与它同级，且在它之下的标签
+        语法：标签~标签
+         */
+        .p2~p{
+            background: black;
+        }
+
+    </style>
+</head>
+<body>
+<p class="p1">p1</p>
+<p class="p2">p2</p>
+<p>p3</p>
+<ul>
+    <li>
+        <p>p4</p>
+    </li>
+    <li>
+        <p>p5</p>
+    </li>
+    <li>
+        <p>p6</p>
+    </li>
+</ul>
+<p>p7</p>
+<p>p8</p>
+</body>
+</html>

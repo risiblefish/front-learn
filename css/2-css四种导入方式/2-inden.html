@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的4种导入方式</title>
+    <!-- 方式2：内部样式
+       在style标签中编写css
+       -->
+    <style>
+        h1{
+            color: green;
+        }
+    </style>
+    <!-- 方式3： 外部样式
+       通过link引入css
+     -->
+    <link rel="stylesheet" href="h1style.css">
+
+    <!-- 方式4：@import引入
+         @import url(<资源路径>)，不推荐
+
+         方式3和方式4很像，3是html的语法，4是css的语法，所以4只能放在style标签内使用
+   -->
+    <style>
+        @import url("h1style.css");
+        /*@import "h1style.css";*/
+    </style>
+</head>
+<body>
+
+<!-- 方式1：行内样式
+ 在标签中直接编写style属性
+ 优先级：0
+ 这样样式与内容耦合度过高，不推荐
+  -->
+<h1 style="color:red">这是标题</h1>
+<h2> 样式满足就近原则，哪个离被渲染的内容进，就使用哪个样式</h2>
+</body>
+</html>

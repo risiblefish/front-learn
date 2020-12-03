@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+    <style>
+
+        /*
+        选中ul标签的第1个子元素（不使用id class标签）
+
+        伪类选择器语法：
+        标签冒号<功能>
+        */
+        ul>li:first-child{
+            background: red;
+        }
+
+        /*选中ul标签的最后1个子元素*/
+        ul>li:last-child{
+            background: #59cf2d;
+        }
+
+        /*选中P1*/
+        /*方法1：*/
+        body>p:first-child{
+            background: aqua;
+        }
+
+        /*方法2：
+        标签名nth-child(序号)： 表示找到当前p元素的父节点的第2个子节点（从1开始
+        只有当这个节点也是p的时候才会生效，比如把2改为1，会定位到h2标签，但由于它不是p标签，所以背景不会变色
+        */
+        p:nth-child(2){
+            background: green;
+        }
+
+        /*这个方法比nth-child更加精准，它会只遍历与p同类型的标签*/
+        p:nth-of-type(2){
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+<h2>这是标题</h2>
+<p class="p1">p1</p>
+<p class="p2">p2</p>
+<p>p3</p>
+<ul>
+    <li>
+        <p>l1</p>
+    </li>
+    <li>
+        <p>l2</p>
+    </li>
+    <li>
+        <p>l3</p>
+    </li>
+</ul>
+</body>
+</html>

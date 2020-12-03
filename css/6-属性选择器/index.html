@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background: aqua;
+            text-align: center;
+            text-decoration: none;
+            color: coral;
+            margin-right: 5px;
+            line-height: 50px;
+        }
+
+
+        /*存在id的属性，把它选中
+        属性选择器语法： 标签名[属性名]{}
+        */
+        a[id]{
+            background: red;
+        }
+
+
+        /*通过属性选择器选中id叫first的属性*/
+        a[id=first]{
+            background: red;
+        }
+
+        /*选中class包含links的元素
+         =  是绝对等于
+         *= 是包含
+        */
+        a[class*=links]{
+            background: blue;
+        }
+
+
+        /*选中href中以www开头的元素
+          ^= 是以xxx开头
+        */
+        a[href^=www]{
+            background: violet;
+        }
+
+        /*选中href中以hello结尾的元素
+          $= 是以xxx结尾
+        */
+        a[href$=hallo]{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+
+<p class="demo">
+    <a href="www.baidu.com" class="links item first" id="first">1</a>
+    <a href="" class="links item active" target="_blank" title="test">2</a>
+    <a href="../../resources/image/osb.png" class="links image">3</a>
+    <a href="hallo">4</a>
+    <a href="">5</a>
+    <a href="">6</a>
+    <a href="">7</a>
+    <a href="">8</a>
+    <a href="">9</a>
+    <a href="" class="links item last">10</a>
+</p>
+</body>
+</html>

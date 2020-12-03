@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景样式</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 700px;
+            /*边框属性，3个成员分别是 边框粗细，边框样式，边框颜色*/
+            border: 1px solid red;
+            /*如果不加设置，默认是将图片全部平铺*/
+            background-image: url("../../resources/image/osb.png");
+        }
+
+        .div1{
+            background-repeat: repeat-x;
+        }
+
+        .div2{
+            background-repeat: repeat-y;
+        }
+
+        .div3{
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+</body>
+</html>
