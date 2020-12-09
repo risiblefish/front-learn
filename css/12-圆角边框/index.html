@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角边框</title>
+    <style>
+        div{
+            width:300px;
+            height: 300px;
+            border: 10px solid red;
+            /*border-radius 如果只有1个参数，就是4个角应用 2个以上参数的话 就是顺时针应用
+              如果要做成圆形，就让圆角 = 宽度
+            */
+            border-radius: 10px;
+        }
+
+        img{
+            width:300px;
+            height: 300px;
+            border-radius: 300px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="../../resources/image/pekka.jpg" alt="">
+</div>
+</body>
+</html>
