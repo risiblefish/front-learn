@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据渲染</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{a}}
+</div>
+
+<script type="text/javascript">
+    var data = {a : 1};
+    var vm = new Vue({
+       el : "#app",
+       data : data
+    });
+
+vm.a = "hello"
+data.a = "1233"
+
+//$watch是vue自带的回调方法，当变量a的值发生改变后，可以用来观察a的变化
+vm.$watch('a',function(newVal,oldVal){
+    console.log(newVal,oldVal)
+});
+
+//在vue中，提供了$美元符号，来获取vue对象自身的属性或者方法，可以这样来与用户自定义的属性进行区分
+vm.$data.a = "haha"
+
+
+
+//像下面这样，临时增加变量并赋值，在vue中是不生效的，
+//vue要求在构建vue对象的时候，就把变量提前赋给vue对象的data属性
+//data.b  = "aaa"
+//vm.b = "aaa"
+</script>
+</body>
+</html>

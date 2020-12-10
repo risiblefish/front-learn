@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>生命周期举例</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{msg}}
+</div>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            msg: "halo from sean",
+        },
+
+        beforeCreate: function () {
+            console.log('before create');
+        },
+
+        created: function () {
+            console.log('created');
+        },
+
+        beforeMount: function () {
+            console.log('beforeMount');
+        },
+
+        mounted: function () {
+            console.log('mounted');
+        },
+
+        beforeUpdate: function () {
+            console.log('beforeUpdate');
+        },
+
+        updated: function () {
+            console.log('updated');
+        }
+    });
+</script>
+</body>
+</html>
