@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接标签学习</title>
+</head>
+<body>
+<!-- a链接标签学习
+
+属性介绍：
+href : 表示要跳转到的页面地址
+
+target : 表示窗口在哪里打开
+       _blank 表示在新标签中打开
+       _self 表示在自己的网页中打开
+       _top
+       _parent
+
+
+-->
+<a name="mark2">这是示例4的mark2处</a>
+<!-- 示例1 ： 跳转到网页-->
+<br/>
+<a href="1-第一个网页.html">点击我跳转到页面一</a>
+<br/>
+
+<a href="https://www.baidu.com" target="_blank">在新标签页中跳转到百度</a>
+
+<br/>
+
+<a href="https://www.baidu.com" target="_self">在当前页跳转到百度</a>
+
+<br/>
+
+<!-- 示例2 ： 嵌套图片-->
+<a href="">
+    <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+</a>
+
+
+<br/>
+<!-- 示例3 ： 锚链接 实现页面间的跳转
+具体操作：
+首先定义a链接，用它的name属性来作为锚标记名
+然后在新定义一个a链接，在href属性中，用# + 锚标记名 来跳转到前一个a的位置
+-->
+<a name="mark">这里是锚标记处</a>
+<!-- 此处模拟大量面积的图片链接 -->
+<p>
+    <a href="">
+    <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+
+<p>
+    <a href="">
+        <img src="../resources/image/osb.png" alt="示例图片" title="悬停文字" width="300" height="300">
+    </a>
+</p>
+
+<a href="#mark">跳转到锚标记处</a>
+
+
+<br/>
+<!-- 示例4 ： 将超链接和锚链接混合使用 -->
+<a href="4-链接标签.html#mark2">跳转到4页面的mark2处</a>
+
+<br/>
+<!-- 功能性链接
+邮件链接 ： mailto
+qq链接： 可以在qq推广的官网中复制链接
+-->
+<a href="mailto:526556235@qq.com">点击联系我的邮箱</a>
+<br/>
+<a href="<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2::53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>"></a>
+</body>
+</html>
