@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>单选和多选框</title>
+	</head>
+	<body>
+		<form action="">
+			<!-- 单选属性 radio
+			 只有在单选项在同一个组时（比如name相同），才会有单选效果
+			 -->
+			<p>请选择你的职业</p>
+			<label>游牧民</label>
+			<input type="radio" name="pro">
+			<label>街头小子</label>
+			<input type="radio" name="pro">
+			<label>企业员工</label>
+			<input type="radio" name="pro">
+		</form>
+		
+		<form action="">
+			<!-- 
+			  如果按照上面表单的写法，会发现单选框点击范围很小。
+			  如果我们想扩大点击范围，可以把input放到label标签里面
+			  这样，即便点击了文字，也会选中该选项
+			 -->
+			<p>请选择的你的职业</p>
+			<label>游牧民<input type="radio" name="pro"></label>
+			<label>街头小子<input type="radio" name="pro"></label>
+			<label>企业员工<input type="radio" name="pro"></label>
+		</form>
+		
+		<form action="">
+			<!-- 
+				另一个扩大点击范围的方法是，给每个单选项加上id
+				然后用label的for属性来与input进行关联
+				同样可以达到点击文字就选中选项的效果
+			 -->
+			<p>请选择你的职业</p>
+			<label for="nomad">游牧民</label>
+			<input type="radio" name="pro" id="nomad">
+			<label for="streetkid">街头小子</label>
+			<input type="radio" name="pro" id="streetkid">
+			<label for="corpo">企业员工</label>
+			<input type="radio" name="pro" id="corpo">
+		</form>
+	</body>
+</html>
