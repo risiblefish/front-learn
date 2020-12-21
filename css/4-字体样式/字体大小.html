@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字体大小设置3种方式</title>
+		<style>
+			section{
+				font-size: 20px;
+			}
+			
+			section h2{
+				/* 2em 表示是父级字体大小的2倍，也就是40px */
+				font-size: 2em;
+			}
+			
+			section .note{
+				/* 父级元素字体大小的80%，也就是16px */
+				font-size: 80%;
+				color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<!-- 下面这段是40px -->
+			<h2>a web font example</h2>
+			<!-- 下面这段是16px -->
+			<p class="note">Notes: web fonts ...</p>
+			<!-- 下面这段是20px -->
+			<p>With this in mind, let's build...</p>
+		</section>
+	</body>
+</html>

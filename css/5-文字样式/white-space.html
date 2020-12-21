@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>white-space</title>
+		<style type="text/css">
+			#p1{
+				/* normal: 默认行为，空格和换行都会被合并 */
+				white-space: normal;
+			}
+			#p2{
+				/* nowrap: 该行永不换行 */
+				white-space: nowrap;
+			}
+			#p3{
+				/* pre: 保留HTML代码中的空格和换行 */
+				white-space: pre;
+			}
+			#p4{
+				/* pre-wrap: 
+				和pre的唯一区别是，当一行显式不下的时候会自动折行 */
+				white-space: pre-wrap;
+			}
+			#p5{
+				/* pre-line: 空格合并，保留换行 */
+				white-space: pre-line;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">this is a paragraph, the text
+			is splitted into two lines.
+		</p>
+		<p id="p2">this is a paragraph, the text
+			is splitted into two lines.
+		</p>
+		<p id="p3">this is a paragraph, the text
+			is splitted into two lines.
+		</p>
+		<p id="p4">this is a paragraph, the text
+			is splitted into two lines.
+		</p>
+		<p id="p5">this is a paragraph, the text
+			is splitted into two lines.
+		</p>
+	</body>
+</html>
