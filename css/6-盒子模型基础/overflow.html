@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				border: 2px solid red;
+				width: 100px;
+				height: 100px;
+				margin-bottom: 100px;
+				padding: 10px;
+				/* overflow:
+				 默认visible,即超出边框范围后仍然显示 
+				 */
+			}
+			.box2{
+				border: 2px solid red;
+				width: 100px;
+				height: 100px;
+				margin-bottom: 100px;
+				padding: 10px;
+				/* hidden:超出部分隐藏 */
+				overflow: hidden;
+			}
+			.box3{
+				border: 2px solid red;
+				width: 100px;
+				height: 100px;
+				margin-bottom: 100px;
+				padding: 10px;
+				/* scroll:超出后显示滚动条 */
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">北国风光，千里冰封，万里雪飘。
+		
+			望长城内外，惟余莽莽；大河上下，顿失滔滔。
+		</div>
+		<div class="box2">北国风光，千里冰封，万里雪飘。
+		
+			望长城内外，惟余莽莽；大河上下，顿失滔滔。
+		</div>
+		<div class="box3">北国风光，千里冰封，万里雪飘。
+		
+			望长城内外，惟余莽莽；大河上下，顿失滔滔。
+		</div>
+	</body>
+</html>

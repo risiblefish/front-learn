@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				width:100px;
+				height:100px;
+				background: red;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:100px;
+			}
+			/* div1和div2分别设置了下边距100和上边距100
+			   但实际2个盒子边距只有100，而不是200
+			   这是因为在垂直方向上，相邻边距会被合并
+			   即，2者取最大的值做边距
+			 */
+			#div2{
+				width:100px;
+				height:100px;
+				background: green;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+	</body>
+</html>
